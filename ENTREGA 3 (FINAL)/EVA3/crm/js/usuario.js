@@ -48,7 +48,7 @@ var fechaHoraActual = obtenerFechaHora();
 
 //Carga útil de datos
 const raw = JSON.stringify({
-  "id_usuario": 1199,
+  "id_usuario": 9867,
   "dv": dv_usuario,
   "nombres": nombres_usuario,
   "apellidos": apellidos_usuario,
