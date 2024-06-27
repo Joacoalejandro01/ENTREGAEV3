@@ -5,9 +5,10 @@ function agregarResultado(){
 //Obtenemos el tipo de gestión que ingresa el usuario
 var nombre_resultado = document.getElementById("txt_nombre").value;
 
-if (nombre_resultado === null){
-  mostrarAlerta('danger', 'Ingrese un dato correcto. Por favor, revise los datos.');
-}
+if (nombre_resultado.trim() === "") {
+    mostrarAlerta('danger', 'Ingrese un dato correcto. Por favor, revise los datos.');
+    return;
+  }
   
 //Encabezado de la solicitud
 const myHeaders = new Headers();
@@ -142,11 +143,12 @@ function actualizarResultado(){
   //Obtenemos el tipo de gestión que ingresa el usuario
   var nombre_resultado = document.getElementById("txt_nombre").value;
 
-  if (nombre_resultado === null){
+  if (nombre_resultado.trim() === "") {
     mostrarAlerta('danger', 'Ingrese un dato correcto. Por favor, revise los datos.');
+    return;
   }
     
-  
+
   //Encabezado de la solicitud
   const myHeaders = new Headers();
   myHeaders.append("Content-Type", "application/json");
