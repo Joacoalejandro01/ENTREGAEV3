@@ -10,31 +10,31 @@ var email_usuario = document.getElementById("txt_usuario_email").value;
 var celular_usuario = parseInt(document.getElementById("txt_usuario_celular").value);
 var username_usuario = document.getElementById("txt_usuario_username").value;
 
-if (dv_usuario.trim() === "") {
+if (dv_usuario === "") {
     mostrarAlerta('danger', 'Ingrese un dato correcto. Por favor, revise los datos.');
     return;
   }
-  if (nombres_usuario.trim() === "") {
+  if (nombres_usuario === "") {
     mostrarAlerta('danger', 'Ingrese un dato correcto. Por favor, revise los datos.');
     return;
   }
-  if (apellidos_usuario.trim() === "") {
+  if (apellidos_usuario === "") {
     mostrarAlerta('danger', 'Ingrese un dato correcto. Por favor, revise los datos.');
     return;
   }
-  if (email_usuario.trim() === "") {
+  if (email_usuario === "") {
     mostrarAlerta('danger', 'Ingrese un dato correcto. Por favor, revise los datos.');
     return;
   }
-  if (celular_usuario.trim() === "") {
+  if (celular_usuario === "") {
     mostrarAlerta('danger', 'Ingrese un dato correcto. Por favor, revise los datos.');
     return;
   }
-  if (username_usuario.trim() === "") {
+  if (username_usuario === "") {
     mostrarAlerta('danger', 'Ingrese un dato correcto. Por favor, revise los datos.');
     return;
   }
-  if (password_usuario.trim() === "") {
+  if (password_usuario === "") {
     mostrarAlerta('danger', 'Ingrese un dato correcto. Por favor, revise los datos.');
     return;
   }
@@ -206,31 +206,31 @@ function actualizarUsuario(){
   var username_usuario = document.getElementById("txt_usuario_username").value;
   var password_usuario = document.getElementById("txt_usuario_password").value;
 
-  if (dv_usuario.trim() === "") {
+  if (dv_usuario === "") {
     mostrarAlerta('danger', 'Ingrese un dato correcto. Por favor, revise los datos.');
     return;
   }
-  if (nombres_usuario.trim() === "") {
+  if (nombres_usuario === "") {
     mostrarAlerta('danger', 'Ingrese un dato correcto. Por favor, revise los datos.');
     return;
   }
-  if (apellidos_usuario.trim() === "") {
+  if (apellidos_usuario === "") {
     mostrarAlerta('danger', 'Ingrese un dato correcto. Por favor, revise los datos.');
     return;
   }
-  if (email_usuario.trim() === "") {
+  if (email_usuario === "") {
     mostrarAlerta('danger', 'Ingrese un dato correcto. Por favor, revise los datos.');
     return;
   }
-  if (celular_usuario.trim() === "") {
+  if (celular_usuario === "") {
     mostrarAlerta('danger', 'Ingrese un dato correcto. Por favor, revise los datos.');
     return;
   }
-  if (username_usuario.trim() === "") {
+  if (username_usuario === "") {
     mostrarAlerta('danger', 'Ingrese un dato correcto. Por favor, revise los datos.');
     return;
   }
-  if (password_usuario.trim() === "") {
+  if (password_usuario === "") {
     mostrarAlerta('danger', 'Ingrese un dato correcto. Por favor, revise los datos.');
     return;
   }
