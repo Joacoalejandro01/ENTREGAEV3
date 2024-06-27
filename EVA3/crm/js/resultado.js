@@ -31,23 +31,27 @@ const requestOptions = {
 };
 
 //Ejecutamos solicitud
-fetch("http://144.126.210.74:8080/api/resultado", requestOptions)
-    .then((response) => {
-      //Por hacer: Usar componentes de bootstrap para gestionar éxito o error
-    if(response.status == 200) {
+fetch("http://144.126.210.74:8080/api/gestion", requestOptions)
+  .then((response) => {
+    if (response.ok) {
       setTimeout(() => {
         location.href = "listar.html";
-    }, 2000); 
-        mostrarAlerta('danger', 'Solicitud incorrecta. Por favor, revise los datos.');
+      }, 2000); 
+      mostrarAlerta('success', 'Gestión agregada exitosamente.');
+    } else {
+      mostrarAlerta('danger', 'Error en la solicitud. Código de estado: ' + response.status);
+      console.error('Error en la solicitud:', response.status);
     }
-    else if(response.status == 400) {
-    }
-        mostrarAlerta('success', 'Resultado creado exitosamente.');
-
-    })
-    .then((result) => console.log(result))
-    .catch((error) => console.error(error));
-    }
+    return response.json(); // Parseamos la respuesta JSON si es necesario
+  })
+  .then((result) => {
+    console.log(result); // Manejar el resultado si es necesario
+  })
+  .catch((error) => {
+    console.error('Error en la solicitud:', error); // Manejar errores generales
+    mostrarAlerta('danger', 'Error en la solicitud. Por favor, intenta nuevamente.'); // Mostrar alerta de error
+  });
+}
 function listarResultado(){
   const requestOptions = {
     method: "GET",
@@ -197,23 +201,27 @@ function actualizarResultado(){
     };
     
     //Ejecutamos solicitud
-    fetch("http://144.126.210.74:8080/api/resultado/"+ g_id_resultado, requestOptions)
-        .then((response) => {
-          if(response.status == 200){
-            setTimeout(() => {
-            location.href ="listar.html";
-          }, 2000); 
-            mostrarAlerta('danger', 'No se pudo actualizar la gestion.');
-            
-          }
-          else if(response.status == 400) {
-          }
-            mostrarAlerta('success', 'Resultado eliminada exitosamente.');
-      
-        })
-        .then((result) => console.log(result))
-        .catch((error) => console.error(error));
-      }
+    fetch("http://144.126.210.74:8080/api/resultado/" + g_id_resultado, requestOptions)
+  .then((response) => {
+    if (response.status === 200) {
+      setTimeout(() => {
+        location.href = "listar.html";
+      }, 2000); 
+      mostrarAlerta('success', 'Resultado eliminado exitosamente.');
+    } else {
+      mostrarAlerta('danger', 'No se pudo eliminar el resultado.');
+      console.error('Error en la solicitud:', response.status);
+    }
+    return response.json(); // Parseamos la respuesta JSON si es necesario
+  })
+  .then((result) => {
+    console.log(result); // Manejar el resultado si es necesario
+  })
+  .catch((error) => {
+    console.error('Error en la solicitud:', error); // Manejar errores generales
+    mostrarAlerta('danger', 'Error en la solicitud. Por favor, intenta nuevamente.'); // Mostrar alerta de error
+  });
+}
 
     function obtenerFechaHora(){
       var fechaHoraActual = new Date();
