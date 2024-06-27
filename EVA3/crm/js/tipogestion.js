@@ -5,7 +5,7 @@ function agregarTipoGestion(){
 //Obtenemos el tipo de gestión que ingresa el usuario
 var nombre_tipo_gestion = document.getElementById("txt_nombre").value;
 
-if (nombre_tipo_gestion.trim() === "") {
+if (nombre_tipo_gestion === "") {
     mostrarAlerta('danger', 'Ingrese un dato correcto. Por favor, revise los datos.');
     return;
 }
@@ -142,7 +142,7 @@ function actualizarTipoGestion(){
   //Obtenemos el tipo de gestión que ingresa el usuario
   var nombre_tipo_gestion = document.getElementById("txt_nombre").value;
 
-  if (nombre_tipo_gestion.trim() === "") {
+  if (nombre_tipo_gestion === "") {
     mostrarAlerta('danger', 'Ingrese un dato correcto. Por favor, revise los datos.');
     return;
 }
