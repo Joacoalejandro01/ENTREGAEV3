@@ -8,23 +8,23 @@ var id_tipo_gestion = document.getElementById("sel_id_tipo_gestion").value;
 var id_resultado    = document.getElementById("sel_id_resultado").value;
 var comentarios     = document.getElementById("txt_comentarios").value;
 
-if (id_usuario.trim() === "") {
+if (id_usuario === "") {
     mostrarAlerta('danger', 'Ingrese un dato correcto. Por favor, revise los datos.');
     return;
   }
-  if (id_cliente.trim() === "") {
+  if (id_cliente === "") {
     mostrarAlerta('danger', 'Ingrese un dato correcto. Por favor, revise los datos.');
     return;
   }
-  if (id_tipo_gestion.trim() === "") {
+  if (id_tipo_gestion === "") {
     mostrarAlerta('danger', 'Ingrese un dato correcto. Por favor, revise los datos.');
     return;
   }
-  if (id_resultado.trim() === "") {
+  if (id_resultado === "") {
     mostrarAlerta('danger', 'Ingrese un dato correcto. Por favor, revise los datos.');
     return;
   }
-  if (comentarios.trim() === "") {
+  if (comentarios === "") {
     mostrarAlerta('danger', 'Ingrese un dato correcto. Por favor, revise los datos.');
     return;
   }
@@ -192,23 +192,23 @@ function actualizarGestion(){
   var id_resultado = document.getElementById("sel_id_resultado").value;
   var comentarios = document.getElementById("txt_comentarios").value;
 
-  if (id_usuario.trim() === "") {
+  if (id_usuario === "") {
     mostrarAlerta('danger', 'Ingrese un dato correcto. Por favor, revise los datos.');
     return;
   }
-  if (id_cliente.trim() === "") {
+  if (id_cliente === "") {
     mostrarAlerta('danger', 'Ingrese un dato correcto. Por favor, revise los datos.');
     return;
   }
-  if (id_tipo_gestion.trim() === "") {
+  if (id_tipo_gestion === "") {
     mostrarAlerta('danger', 'Ingrese un dato correcto. Por favor, revise los datos.');
     return;
   }
-  if (id_resultado.trim() === "") {
+  if (id_resultado === "") {
     mostrarAlerta('danger', 'Ingrese un dato correcto. Por favor, revise los datos.');
     return;
   }
-  if (comentarios.trim() === "") {
+  if (comentarios === "") {
     mostrarAlerta('danger', 'Ingrese un dato correcto. Por favor, revise los datos.');
     return;
   }
