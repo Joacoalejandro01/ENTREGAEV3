@@ -5,7 +5,7 @@ function agregarResultado(){
 //Obtenemos el tipo de gestión que ingresa el usuario
 var nombre_resultado = document.getElementById("txt_nombre").value;
 
-if (nombre_resultado.trim() === "") {
+if (nombre_resultado === "") {
     mostrarAlerta('danger', 'Ingrese un dato correcto. Por favor, revise los datos.');
     return;
   }
@@ -143,7 +143,7 @@ function actualizarResultado(){
   //Obtenemos el tipo de gestión que ingresa el usuario
   var nombre_resultado = document.getElementById("txt_nombre").value;
 
-  if (nombre_resultado.trim() === "") {
+  if (nombre_resultado === "") {
     mostrarAlerta('danger', 'Ingrese un dato correcto. Por favor, revise los datos.');
     return;
   }
