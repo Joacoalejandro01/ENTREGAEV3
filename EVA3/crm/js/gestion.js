@@ -8,21 +8,27 @@ var id_tipo_gestion = document.getElementById("sel_id_tipo_gestion").value;
 var id_resultado    = document.getElementById("sel_id_resultado").value;
 var comentarios     = document.getElementById("txt_comentarios").value;
 
-if (id_usuario === null){
-  mostrarAlerta('danger', 'Ingrese un dato correcto. Por favor, revise los datos.');
-}
-  if (id_cliente === null){
-  mostrarAlerta('danger', 'Ingrese un dato correcto. Por favor, revise los datos.');
-}
-  if (id_tipo_gestion === null){
-  mostrarAlerta('danger', 'Ingrese un dato correcto. Por favor, revise los datos.');
-}
-  if (id_resultado === null){
-  mostrarAlerta('danger', 'Ingrese un dato correcto. Por favor, revise los datos.');
-}
-  if (comentarios === null){
-  mostrarAlerta('danger', 'Ingrese un dato correcto. Por favor, revise los datos.');
-}
+if (id_usuario.trim() === "") {
+    mostrarAlerta('danger', 'Ingrese un dato correcto. Por favor, revise los datos.');
+    return;
+  }
+  if (id_cliente.trim() === "") {
+    mostrarAlerta('danger', 'Ingrese un dato correcto. Por favor, revise los datos.');
+    return;
+  }
+  if (id_tipo_gestion.trim() === "") {
+    mostrarAlerta('danger', 'Ingrese un dato correcto. Por favor, revise los datos.');
+    return;
+  }
+  if (id_resultado.trim() === "") {
+    mostrarAlerta('danger', 'Ingrese un dato correcto. Por favor, revise los datos.');
+    return;
+  }
+  if (comentarios.trim() === "") {
+    mostrarAlerta('danger', 'Ingrese un dato correcto. Por favor, revise los datos.');
+    return;
+  }
+
 
 //Encabezado de la solicitud
 const myHeaders = new Headers();
@@ -186,21 +192,27 @@ function actualizarGestion(){
   var id_resultado = document.getElementById("sel_id_resultado").value;
   var comentarios = document.getElementById("txt_comentarios").value;
 
-  if (id_usuario === null){
+  if (id_usuario.trim() === "") {
     mostrarAlerta('danger', 'Ingrese un dato correcto. Por favor, revise los datos.');
+    return;
   }
-    if (id_cliente === null){
+  if (id_cliente.trim() === "") {
     mostrarAlerta('danger', 'Ingrese un dato correcto. Por favor, revise los datos.');
+    return;
   }
-    if (id_tipo_gestion === null){
+  if (id_tipo_gestion.trim() === "") {
     mostrarAlerta('danger', 'Ingrese un dato correcto. Por favor, revise los datos.');
+    return;
   }
-    if (id_resultado === null){
+  if (id_resultado.trim() === "") {
     mostrarAlerta('danger', 'Ingrese un dato correcto. Por favor, revise los datos.');
+    return;
   }
-    if (comentarios === null){
+  if (comentarios.trim() === "") {
     mostrarAlerta('danger', 'Ingrese un dato correcto. Por favor, revise los datos.');
+    return;
   }
+
   
   
   //Encabezado de la solicitud
