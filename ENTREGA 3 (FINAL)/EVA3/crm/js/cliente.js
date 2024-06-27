@@ -25,7 +25,7 @@ var celular_cliente = parseInt(document.getElementById("txt_cliente_celular").va
     mostrarAlerta('danger', 'Ingrese un dato correcto. Por favor, revise los datos.');
     return;
   }
-  if (celular_cliente === "") {
+  if (celular_cliente === ""|| isNaN(parseInt(celular))) {
     mostrarAlerta('danger', 'Ingrese un dato correcto. Por favor, revise los datos.');
     return;
   }
@@ -204,7 +204,7 @@ function actualizarCliente(){
     mostrarAlerta('danger', 'Ingrese un dato correcto. Por favor, revise los datos.');
     return;
   }
-  if (celular_cliente === "") {
+  if (celular_cliente === ""|| isNaN(parseInt(celular))) {
     mostrarAlerta('danger', 'Ingrese un dato correcto. Por favor, revise los datos.');
     return;
   }
