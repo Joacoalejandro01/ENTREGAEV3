@@ -9,23 +9,23 @@ var apellidos_cliente = document.getElementById("txt_cliente_apellidos").value;
 var email_cliente = document.getElementById("txt_cliente_email").value;
 var celular_cliente = parseInt(document.getElementById("txt_cliente_celular").value);
 
-  if (dv_cliente.trim() === "") {
+  if (dv_cliente === "") {
     mostrarAlerta('danger', 'Ingrese un dato correcto. Por favor, revise los datos.');
     return;
   }
-  if (nombres_cliente.trim() === "") {
+  if (nombres_cliente === "") {
     mostrarAlerta('danger', 'Ingrese un dato correcto. Por favor, revise los datos.');
     return;
   }
-  if (apellidos_cliente.trim() === "") {
+  if (apellidos_cliente === "") {
     mostrarAlerta('danger', 'Ingrese un dato correcto. Por favor, revise los datos.');
     return;
   }
-  if (email_cliente.trim() === "") {
+  if (email_cliente === "") {
     mostrarAlerta('danger', 'Ingrese un dato correcto. Por favor, revise los datos.');
     return;
   }
-  if (celular_cliente.trim() === "") {
+  if (celular_cliente === "") {
     mostrarAlerta('danger', 'Ingrese un dato correcto. Por favor, revise los datos.');
     return;
   }
@@ -189,23 +189,23 @@ function actualizarCliente(){
     var email_cliente = document.getElementById("txt_cliente_email").value;
     var celular_cliente = parseInt(document.getElementById("txt_cliente_celular").value);
 
-    if (dv_cliente.trim() === "") {
+    if (dv_cliente === "") {
     mostrarAlerta('danger', 'Ingrese un dato correcto. Por favor, revise los datos.');
     return;
   }
-  if (nombres_cliente.trim() === "") {
+  if (nombres_cliente === "") {
     mostrarAlerta('danger', 'Ingrese un dato correcto. Por favor, revise los datos.');
     return;
   }
-  if (apellidos_cliente.trim() === "") {
+  if (apellidos_cliente === "") {
     mostrarAlerta('danger', 'Ingrese un dato correcto. Por favor, revise los datos.');
     return;
   }
-  if (email_cliente.trim() === "") {
+  if (email_cliente === "") {
     mostrarAlerta('danger', 'Ingrese un dato correcto. Por favor, revise los datos.');
     return;
   }
-  if (celular_cliente.trim() === "") {
+  if (celular_cliente === "") {
     mostrarAlerta('danger', 'Ingrese un dato correcto. Por favor, revise los datos.');
     return;
   }
