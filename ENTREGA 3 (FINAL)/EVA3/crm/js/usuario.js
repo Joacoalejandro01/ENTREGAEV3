@@ -27,7 +27,7 @@ if (dv_usuario === "") {
     mostrarAlerta('danger', 'Ingrese un dato correcto. Por favor, revise los datos.');
     return;
   }
-  if (celular_usuario === "") {
+  if (celular_usuario === ""|| isNaN(parseInt(celular))) {
     mostrarAlerta('danger', 'Ingrese un dato correcto. Por favor, revise los datos.');
     return;
   }
@@ -223,7 +223,7 @@ function actualizarUsuario(){
     mostrarAlerta('danger', 'Ingrese un dato correcto. Por favor, revise los datos.');
     return;
   }
-  if (celular_usuario === "") {
+  if (celular_usuario === ""|| isNaN(parseInt(celular))) {
     mostrarAlerta('danger', 'Ingrese un dato correcto. Por favor, revise los datos.');
     return;
   }
